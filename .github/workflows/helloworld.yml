@@ -8,7 +8,7 @@ on:
     - prod
     - replica
 
-job:    
+jobs:    
   hello_world:
    runs_on: ubuntu latest
    steps: 
