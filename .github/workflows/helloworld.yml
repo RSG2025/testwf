@@ -6,6 +6,7 @@ on:
   branches:
     - master
     - prod
+    - replica
 
 job:    
   hello_world:
