@@ -1,0 +1,15 @@
+name: "hello workflow"
+
+# controls when the action will run. Triggers the WF on push done to master or prod
+on:
+ push:
+  branches:
+    - master
+    - prod
+
+job:    
+  hello_world:
+   runs_on: ubuntu latest
+   steps: 
+    - name: "print hello World"
+      run: echo "hello world"
