@@ -1,0 +1,15 @@
+name: "multi event pipeline Workflow"
+
+# controls when the action will run. Triggers the WF on push done to master or prod
+on:
+ push:
+  branches:
+    - master
+    
+
+jobs:    
+  on-push:
+   runs-on: windows-latest
+   steps: 
+    - name: "running on master push"
+      run: echo "running on master push"
